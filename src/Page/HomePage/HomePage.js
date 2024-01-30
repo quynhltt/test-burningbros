@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ListProduct from './ListProduct/ListProduct'
+import ListProduct from './components/ListProduct/ListProduct'
 
 export default function HomePage() {
   return (

@@ -1,17 +1,16 @@
-import { localUserServ } from "../../service/localService";
-import { SET_USER_LOGIN } from "../constant/userConstant";
+import { SEARCH_PRODUCT } from "../constant/userConstant";
 
 const initialState = {
-    userInfo: localUserServ.get(), //object, array rỗng tính là true, còn lại là false
+  searchVal: [],
 }
 
 let userReducer = (state = initialState, { type, payload }) => {
   switch (type) {
-    case SET_USER_LOGIN: {
-        return {...state, userInfo: payload}
+    case SEARCH_PRODUCT: {
+      return { ...state, searchVal: payload }
     }
     default:
-        return state;
+      return state;
   }
 }
 

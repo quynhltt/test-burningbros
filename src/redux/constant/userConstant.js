@@ -1,1 +1,1 @@
-export const SET_USER_LOGIN = 'SET_USER_LOGIN';
+export const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
